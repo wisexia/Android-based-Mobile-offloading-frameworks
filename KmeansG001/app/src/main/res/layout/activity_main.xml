@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiahui.kmeansg001.MainActivity">
+
+    <Button
+        android:id="@+id/btn_chooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:text="选择图片"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp" />
+
+    <Button
+        android:id="@+id/btn_kmeans"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:text="执行Kmeans"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/tv_classifyNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="分类数：" />
+
+    <EditText
+        android:id="@+id/et_classifyNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/tv_iteratorNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="迭代数：" />
+
+    <EditText
+        android:id="@+id/ed_iteratorNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/tv_executionTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="执行时间：" />
+
+    <EditText
+        android:id="@+id/ed_executionTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"
+        android:text="0ms" />
+
+</LinearLayout>
